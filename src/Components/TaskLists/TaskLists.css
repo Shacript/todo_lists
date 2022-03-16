@@ -1,0 +1,22 @@
+.TaskLists {
+  width: 300px;
+  height: 500px;
+  background-color: rgb(60, 61, 71);
+  padding: 1em;
+}
+
+.TaskLists h1 {
+  margin-bottom: 0.5em;
+}
+
+.List_parent {
+  max-height: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.5em;
+  overflow: auto;
+}
+
+.List_parent::-webkit-scrollbar {
+  display: none;
+}

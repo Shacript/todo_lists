@@ -1,0 +1,23 @@
+.List_child {
+  padding: 0.5em;
+  width: 100%;
+  background: rgb(48, 49, 56);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1em;
+}
+
+.List_child p {
+  word-break: break-all;
+}
+
+.List_child .control {
+  align-self: flex-start;
+  display: flex;
+  column-gap: 0.5em;
+}
+
+.List_child .control button {
+  max-height: 2em;
+}

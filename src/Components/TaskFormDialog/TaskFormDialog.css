@@ -1,0 +1,30 @@
+.dialogBackground {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background: rgb(48, 47, 56);
+  padding: 1em 2em;
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+  z-index: 101;
+}
+
+.form-container input {
+  padding: 0.5em 1em;
+  border: none;
+  background: rgb(38, 37, 44);
+  color: #adbad1;
+}
+
+.form-container input:focus {
+  outline: none;
+}

@@ -36,35 +36,35 @@ function App() {
   };
 
   const onToDoListRemove = (task_index) => {
-    setToDoLists((prev) => prev.filter((v, index) => index !== task_index));
+    setToDoLists(toDoLists.filter((v, index) => index !== task_index));
   };
 
   const onDoingListsRemove = (task_index) => {
-    setDoingLists((prev) => prev.filter((v, index) => index !== task_index));
+    setDoingLists(doingLists.filter((v, index) => index !== task_index));
   };
 
   const onDoneListsRemove = (task_index) => {
-    setDoneLists((prev) => prev.filter((v, index) => index !== task_index));
+    setDoneLists(doneLists.filter((v, index) => index !== task_index));
   };
 
   const nextToDoLists = (task_index) => {
     setDoingLists((prev) => [...prev, toDoLists[task_index]]);
-    setToDoLists((prev) => prev.filter((v, index) => index !== task_index));
+    setToDoLists(toDoLists.filter((v, index) => index !== task_index));
   };
 
   const nextDoingLists = (task_index) => {
     setDoneLists((prev) => [...prev, doingLists[task_index]]);
-    setDoingLists((prev) => prev.filter((v, index) => index !== task_index));
+    setDoingLists(doingLists.filter((v, index) => index !== task_index));
   };
 
   const backDoingLists = (task_index) => {
     setToDoLists((prev) => [...prev, doingLists[task_index]]);
-    setDoingLists((prev) => prev.filter((v, index) => index !== task_index));
+    setDoingLists(doingLists.filter((v, index) => index !== task_index));
   };
 
   const backDoneLists = (task_index) => {
     setDoingLists((prev) => [...prev, doneLists[task_index]]);
-    setDoneLists((prev) => prev.filter((v, index) => index !== task_index));
+    setDoneLists(doneLists.filter((v, index) => index !== task_index));
   };
 
   const onCloseDialog = () => {

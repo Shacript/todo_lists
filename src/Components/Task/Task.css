@@ -3,21 +3,38 @@
   width: 100%;
   background: rgb(48, 49, 56);
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  row-gap: 0.5em;
   column-gap: 1em;
 }
 
 .List_child p {
+  width: 100%;
   word-break: break-all;
+  padding-top: 0.2em;
+  padding-left: 0.5em;
 }
 
 .List_child .control {
-  align-self: flex-start;
+  width: 100%;
+  justify-content: flex-end;
   display: flex;
   column-gap: 0.5em;
 }
 
 .List_child .control button {
   max-height: 2em;
+}
+
+.List_child input {
+  width: 100%;
+  padding: 0.5em 1em;
+  border: none;
+  background: rgb(38, 37, 44);
+  color: #adbad1;
+}
+
+.List_child input:focus {
+  outline: none;
 }

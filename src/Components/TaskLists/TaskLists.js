@@ -2,7 +2,14 @@ import "./TaskLists.css";
 
 import Task from "../Task/Task";
 
-const TaskLists = ({ title, TaskLists, onNext, onBack }) => {
+const TaskLists = ({
+  title,
+  TaskLists,
+  onNext,
+  onBack,
+  onChange,
+  onRemove,
+}) => {
   return (
     <div className="TaskLists">
       <h1>{title}</h1>
@@ -15,6 +22,8 @@ const TaskLists = ({ title, TaskLists, onNext, onBack }) => {
               text={value}
               onBack={onBack}
               onNext={onNext}
+              onChange={onChange}
+              onRemove={onRemove}
             />
           ))}
       </div>
